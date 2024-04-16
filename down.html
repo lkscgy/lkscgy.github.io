@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta http-equiv="Cache" content="no-cache">
+    <meta property="og:url" content="https://www.regalgame777.com/down/share/down.html">
+    <meta property="og:title" content="câu cá vương giả-2024 Trò chơi phổ biến nhất">
+    <meta property="og:description" name="description" content="Đây là một trò chơi thực sự có thể kiếm tiền, tôi đã kiếm được 500.000 VND trong đó, hãy đến và chơi thử">
+    <meta property="og:image" content="https://www.regalgame777.com/down/share/share.jpg">
+
+	<title>câu cá vương giả-2024 Trò chơi phổ biến nhất</title>
+
+	<style>
+		.invitecode{
+			width: 100%;
+			background-color: rgb(0, 165, 230);
+			text-align: center;
+		}
+		
+		#iddesc{
+			font-size: 4vw;
+		}
+		
+        #partnerid{
+			font-size: 7vw;
+        }
+
+		#imgdownload{
+			width: 100%;
+		}
+    </style>
+</head>
+<body>
+	<div class="invitecode">
+		<span id="iddesc"></span>
+		<br>
+		<span id="partnerid"></span>
+	</div>
+	<img id="imgdownload" src="down.png">
+	
+	<script type="text/javascript">
+		//取Url参数
+		var partnerId = null;
+		var parmStr = window.location.search.substring(1);
+		var parms = parmStr.split("&");
+		for (var i = 0; i < parms.length; i++) {
+			var parm = parms[i].split("=");
+			if (parm[0] == "partnerid") {
+				partnerId = parm[1];
+			}
+		}
+
+		window.onload = function(){
+			//判断iOS还是Android
+			let platform = 0
+			let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+			userAgent = userAgent.toLowerCase();
+			if (userAgent.match(/iphone/i) || userAgent.match(/ipad/i) || userAgent.match(/ipod/i) || userAgent.match(/ios/i)) {
+				platform = 1;
+			} 
+			else if (userAgent.match(/android/i)) {
+				platform = 2;
+			}
+
+			//邀请码
+			if (partnerId != null) {
+				let desc = document.getElementById("iddesc");
+				desc.innerText = "Vui lòng sao chép thủ công mã mời";
+
+				let pid = document.getElementById("partnerid");
+				pid.innerText = partnerId;
+			}
+			
+			//点击事件
+			let img = document.getElementById("imgdownload");
+			img.onclick = function(){
+				if (partnerId != null) {
+					let textarea = document.createElement("textarea");
+					textarea.value = partnerId;
+					document.body.appendChild(textarea);
+					textarea.select();
+					document.execCommand("copy");
+					document.body.removeChild(textarea);
+
+					alert("Sao chép thành công, liên kết trong game");
+				}
+				
+				if (platform == 1) 
+				{
+					window.location.href = "https://myblb.yhtsacqp.com/api/c/68o34yql";
+				}
+				else
+				{
+					window.location.href = "https://www.regalgame777.com/down/apk/Bắn_Cá_Slots2.apk";
+				}
+			}
+		}
+	</script>
+</body>
+</html>
