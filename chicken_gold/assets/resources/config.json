@@ -1,0 +1,1 @@
+{"importBase":"import","nativeBase":"native","name":"resources","deps":[],"uuids":["2blxwRCDFPBbt8tA33QWE2","7eA9JmFb1CAb4bT7c+8+6D"],"paths":{"0":["audio/bgm",0],"1":["audio/general",0]},"scenes":{},"packs":{},"versions":{"import":[],"native":[]},"redirect":[],"debug":false,"extensionMap":{},"hasPreloadScript":true,"dependencyRelationships":{},"types":["cc.AudioClip"]}
